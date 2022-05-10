@@ -7,7 +7,6 @@ const initState = {
 const reducer = (state = initState, action) => {
   switch (action.type) {
     case authActions.SET_USER_DETAILS:
-    case "DUMY":
       return {
         ...state,
         userDetails: action.userDetails,

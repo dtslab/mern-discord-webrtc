@@ -13,11 +13,12 @@ const getFormValidMessage = () => {
 };
 
 const LoginPageFooter = ({ handleLogin, isFormValid }) => {
-  const history = useNavigate();
+  const navigate = useNavigate();
 
   const handlePushToRegisterPage = () => {
-    history.push("/register");
+    navigate("/register");
   };
+
   return (
     <>
       <Tooltip
