@@ -28,12 +28,13 @@ const RegisterPage = ({ register }) => {
   };
 
   useEffect(() => {
-    setIsFormValid();
-    validateRegisterForm({
-      mail,
-      username,
-      password,
-    });
+    setIsFormValid(
+      validateRegisterForm({
+        mail,
+        username,
+        password,
+      })
+    );
   }, [mail, username, password, setIsFormValid]);
 
   return (
